@@ -377,14 +377,8 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
   padding: 15px 0 5px;
   max-width: 100% !important;
-
-  background-color: rgb(10, 4, 22);
-  color: white; 
-  text-align: center;
-  font-size: 14px;
 }
 
 .footer .footer-copywright {
@@ -393,28 +387,23 @@ button:focus {
   gap: 15px;
 }
 
-.footer h3 {
+.footer-copywright  {
   font-size: 1em;
   color: white !important;
   margin: 0.5em 0;
 }
 
 .footer-icons {
-  display: flex;
-  justify-content: flex-end !important;
   color: white;
+  fill: white;
   font-size: 1.2em;
-  grid-column: 2;
+}
+.telegram{
+  margin-left: 1.2rem;
 }
 
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: right !important;
-  }
+.footer-icons:hover {
+  color: white;
 }
 
 /* --------- */
