@@ -1,6 +1,25 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 
 function Experience() {
+    useEffect(() => {
+        const timeline = document.querySelector('.timeline');
+        
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              timeline.classList.add('start-animation');
+            }
+          },
+          { threshold: 0.5 } // Trigger the animation when 50% of the timeline is visible
+        );
+        
+        observer.observe(timeline);
+        
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
+
     const events = [
     { company: 'AR Robotics and Automation', year: 'Dec 2023 - Feb 2024', role:"Indoor Sales Associate", 
       description:["Composed persuasive email campaigns to target companies", "Promoting robotic solutions",
@@ -19,6 +38,9 @@ function Experience() {
                     key={index} 
                     className={`timeline-event ${index % 2 === 0 ? 'left-container' : 'right-container'}`}
                 >
+                    <div className="timeline-middle">
+                        <div className="timeline-circle"></div>
+                    </div>
                     <div className="f raleway-body">{event.year}</div>
                     <div className="timeline-content">
                         <h3>{event.company}</h3>
@@ -38,6 +60,7 @@ function Experience() {
                         </p>
                     </div>
                 </div>
+                
             ))}
         </div>
     );
