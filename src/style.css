@@ -597,6 +597,35 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+/* --------- */
+/* Timeline */
+/* --------- */
+
+.timeline-event{
+  background: #1f1f1f;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  border-radius: 6px;
+  max-width: 50%;
+}
+
+.event-description{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-content h3{
+  letter-spacing: 0.3rem;
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
