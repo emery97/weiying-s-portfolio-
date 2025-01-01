@@ -15,11 +15,14 @@ function Experience() {
     return (
         <div className="timeline">
             {events.map((event, index) => (
-                <div key={index} className="timeline-event">
-                    <div className="timeline-year">{event.year}</div>
+                <div 
+                    key={index} 
+                    className={`timeline-event ${index % 2 === 0 ? 'left-container' : 'right-container'}`}
+                >
+                    <div className="f raleway-body">{event.year}</div>
                     <div className="timeline-content">
                         <h3>{event.company}</h3>
-                        <h4>{event.role}</h4>
+                        <h4 className='montserrat-head'>{event.role}</h4>
                         <p className='event-description raleway-body'>
                             { Array.isArray(event.description) ? 
                             (
