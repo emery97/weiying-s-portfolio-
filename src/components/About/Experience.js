@@ -20,7 +20,7 @@ function Experience() {
                     <div className="timeline-content">
                         <h3>{event.company}</h3>
                         <h4>{event.role}</h4>
-                        <p className='event-description'>
+                        <p className='event-description raleway-body'>
                             { Array.isArray(event.description) ? 
                             (
                                 <ul>
