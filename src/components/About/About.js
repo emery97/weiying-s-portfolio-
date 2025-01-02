@@ -14,14 +14,14 @@ function About() {
       <Container>
         <Aboutcard />
 
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1 className="project-heading poppins-bold">
+          Languages 
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+        <h1 className="project-heading poppins-bold">
+          Tools Used
         </h1>
         <Toolstack />
         <Experience />

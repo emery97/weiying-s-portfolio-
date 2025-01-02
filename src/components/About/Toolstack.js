@@ -13,6 +13,7 @@ import visualParadigm from "../../Assets/../Assets/visual-paradigm-icon.png";
 import { SiCanva } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { SiAndroidstudio } from "react-icons/si";
+import { SiJira } from "react-icons/si";
 
 
 function Toolstack() {
@@ -51,6 +52,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAndroidstudio  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJira  />
       </Col>
       <Col
         xs={4}

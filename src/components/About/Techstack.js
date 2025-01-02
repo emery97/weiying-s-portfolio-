@@ -18,6 +18,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { MdCss } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiMsqlServer } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
 
 function Techstack() {
   const techDescriptions = {
@@ -54,6 +55,8 @@ function Techstack() {
       {renderColWithTooltip(DiPython, "DiPython")}
       {renderColWithTooltip(DiJava, "DiJava")}
       {renderColWithTooltip(DiMsqlServer , "DiJava")}
+      {renderColWithTooltip(FaBootstrap , "DiJava")}
+
     </Row>
   );
 }
