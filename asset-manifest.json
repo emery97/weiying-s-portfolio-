@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/weiying-s-portfolio-/static/css/main.017edf2e.css",
+    "main.js": "/weiying-s-portfolio-/static/js/main.63e69612.js",
+    "static/js/415.2e3d5328.chunk.js": "/weiying-s-portfolio-/static/js/415.2e3d5328.chunk.js",
+    "static/js/787.4a949132.chunk.js": "/weiying-s-portfolio-/static/js/787.4a949132.chunk.js",
+    "static/media/ameliaXweiying.png": "/weiying-s-portfolio-/static/media/ameliaXweiying.387190b9693151d5794a.png",
+    "static/media/SPM.png": "/weiying-s-portfolio-/static/media/SPM.cb6bf27f7ed3a0f70e33.png",
+    "static/media/eduhelper.png": "/weiying-s-portfolio-/static/media/eduhelper.fca1936c0552b3f75204.png",
+    "static/media/ticketFinder.png": "/weiying-s-portfolio-/static/media/ticketFinder.db15342c332b701882a9.png",
+    "static/media/pfp.png": "/weiying-s-portfolio-/static/media/pfp.61e49b18b0c13db6ba73.png",
+    "static/media/sustainify.png": "/weiying-s-portfolio-/static/media/sustainify.fb51aa4935bb53c5a4a8.png",
+    "static/media/lee-wei-ying-resume.pdf": "/weiying-s-portfolio-/static/media/lee-wei-ying-resume.16441c12cc0113942e0d.pdf",
+    "static/media/home-main.svg": "/weiying-s-portfolio-/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/legitAnot.png": "/weiying-s-portfolio-/static/media/legitAnot.8c2b2bf710da9fe9455b.png",
+    "static/media/power-bi.svg": "/weiying-s-portfolio-/static/media/power-bi.1c9e7f1a90bf33599c65c83424ac41d9.svg",
+    "static/media/pre.svg": "/weiying-s-portfolio-/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/weiying-s-portfolio-/index.html",
+    "main.017edf2e.css.map": "/weiying-s-portfolio-/static/css/main.017edf2e.css.map",
+    "main.63e69612.js.map": "/weiying-s-portfolio-/static/js/main.63e69612.js.map",
+    "415.2e3d5328.chunk.js.map": "/weiying-s-portfolio-/static/js/415.2e3d5328.chunk.js.map",
+    "787.4a949132.chunk.js.map": "/weiying-s-portfolio-/static/js/787.4a949132.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.017edf2e.css",
+    "static/js/main.63e69612.js"
+  ]
+}
