@@ -596,6 +596,54 @@ button:focus {
   line-height: 1.6 !important;
 }
 
+/* Tech icon container styling */
+.tech-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Icon styling */
+.tech-icon-container svg {
+  font-size: 2rem; /* Adjust size of the icons */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect: Apply a shadow to the container and slightly enlarge the icon */
+.tech-icon-container:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect on icon: Make it grow when hovered */
+.tech-icon-container:hover svg {
+  transform: scale(1.2); /* Icon scale on hover */
+}
+
+/* Tech description styling: Initially hidden */
+.tech-description {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* On hover, display the description */
+.tech-icon-container:hover .tech-description {
+  visibility: visible;
+  opacity: 1;
+}
+
 .about-card {
   background-color: rgba(245, 245, 255, 0.7) !important;
   font-size: 1em !important;
