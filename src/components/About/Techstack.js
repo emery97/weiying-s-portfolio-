@@ -46,10 +46,10 @@ function Techstack() {
   };
 
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "50px"}}>
       {/* Loop through tech stack to render icon with hover effect */}
       {Object.keys(techDescriptions).map((tech) => (
-        <Col xs={4} md={2} key={tech} className="tech-icons">
+        <Col xs={4} md={2} key={tech} className="tech-icons" style={{ height: "120px" }}>
           {/* Icon rendering directly from iconMap */}
           <div className="tech-icon-container">
             {iconMap[tech]}
@@ -57,15 +57,6 @@ function Techstack() {
           </div>
         </Col>
       ))}
-
-      {/* Test Column */}
-      <Col xs={4} md={2} className="tech-icons">
-        {/* Just adding a simple C++ icon and text for testing */}
-        <div className="tech-icon-container">
-          <CgCPlusPlus />
-          <div className="tech-description">Test Column</div> {/* Test Column */}
-        </div>
-      </Col>
     </Row>
   );
 }

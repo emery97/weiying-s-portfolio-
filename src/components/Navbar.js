@@ -6,6 +6,8 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { FaGithub } from "react-icons/fa";
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -38,7 +40,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand className="portfolio-text">
+        <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} style={{ color: "white" }}>
           Wei Ying's Portfolio
+        </Nav.Link>
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -97,8 +101,7 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <FaGithub style={{ fontSize: "1.4em" }} />{" "}
               </Button>
             </Nav.Item>
           </Nav>

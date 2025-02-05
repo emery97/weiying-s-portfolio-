@@ -15,64 +15,80 @@ import { FaFigma } from "react-icons/fa";
 import { SiAndroidstudio } from "react-icons/si";
 import { SiJira } from "react-icons/si";
 
-
 function Toolstack() {
+  const toolDescription = {
+    SiVisualstudiocode: "Visual Studio Code",
+    FaGithub: "Github",
+    SiPostman: "Postman",
+    SiCanva: "Canva",
+    FaFigma: "Figma",
+    SiAndroidstudio: "Andriod Studio",
+    SiJira: "Jira",
+  };
+  
+  const iconMap = {
+    powerBI: <powerBI />,
+    SiVisualstudiocode: <SiVisualstudiocode />,
+    FaGithub: <FaGithub />,
+    SiPostman: <SiPostman />,
+    FaFigma: <FaFigma />,
+    SiCanva: <SiCanva />,
+    SiAndroidstudio: <SiAndroidstudio />,
+    SiJira: <SiJira />,
+    visualParadigm: <visualParadigm />,
+  };
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col
-        xs={4}
-        md={2}
-        className="tech-icons"
-        style={{ textAlign: "center", margin: "20px" }}
-      >
+    <Row style={{ justifyContent: "center", paddingBottom: "50px"}}>
+    <Col
+      xs={4}
+      md={2}
+      className="tech-icons"
+      style={{ textAlign: "center", margin: "20px", height: "120px" }}
+    >
+      <div className="tech-icon-container">
         <img
           src={powerBI}
           alt="Power BI"
           style={{
-            width: "100%",
-            maxWidth: "50px", 
-            height: "auto",
+            width: "4rem",  // Match the size to other icons using rem
+            height: "4rem", // Consistent height
+            objectFit: "contain", // Maintain aspect ratio
           }}
         />
+        <div className="tech-description">Power BI</div> {/* Tooltip text */}
+      </div>
+    </Col>
+    <Col
+      xs={4}
+      md={2}
+      className="tech-icons"
+      style={{ textAlign: "center", margin: "20px", height: "120px" }}
+    >
+      <div className="tech-icon-container">
+      <img
+              src={visualParadigm}
+              alt="Power BI"
+              style={{
+                width: "100%",
+                maxWidth: "50px", 
+                height: "auto",
+              }}
+            />
+        <div className="tech-description">Visual Paradigm</div> {/* Tooltip text */}
+      </div>
+    </Col>
+
+    {/* Loop through tech stack to render icon with hover effect */}
+    {Object.keys(toolDescription).map((tech) => (
+      <Col xs={4} md={2} key={tech} className="tech-icons" style={{ height: "120px" }}>
+        {/* Icon rendering directly from iconMap */}
+        <div className="tech-icon-container">
+          {iconMap[tech]}
+          <div className="tech-description">{toolDescription[tech]}</div> {/* Tech description */}
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCanva />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaFigma />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio  />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJira  />
-      </Col>
-      <Col
-        xs={4}
-        md={2}
-        className="tech-icons"
-        style={{ textAlign: "center", margin: "20px" }}
-      >
-        <img
-          src={visualParadigm}
-          alt="Power BI"
-          style={{
-            width: "100%",
-            maxWidth: "50px", 
-            height: "auto",
-          }}
-        />
-      </Col>
-    </Row>
+    ))}
+  </Row>
   );
 }
 
