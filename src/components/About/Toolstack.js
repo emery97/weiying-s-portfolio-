@@ -12,6 +12,7 @@ import {
 import { FaGithub, FaFigma } from "react-icons/fa";
 import powerBI from "../../Assets/power-bi.svg";
 import visualParadigm from "../../Assets/visual-paradigm-icon.png";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 function Toolstack() {
   const toolDescription = {
@@ -26,7 +27,7 @@ function Toolstack() {
   
   const iconMap = {
     powerBI: <img src={powerBI} alt="Power BI" style={{ width: "4rem", height: "4rem", objectFit: "contain" }} />,
-    // SiVisualStudioCode: <SiVisualStudioCode />,
+    SiVisualStudioCode: <BiLogoVisualStudio />,
     FaGithub: <FaGithub />,
     SiPostman: <SiPostman />,
     FaFigma: <FaFigma />,

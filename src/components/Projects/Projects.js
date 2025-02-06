@@ -52,26 +52,11 @@ function Projects() {
               imgPath={chioset}
               isBlog={false}
               title="Chioset - React Web Application"
-              description="My groupmates and I developed a digital safety solution to evaluate suspicious links using SSL certification and user feedback. We integrated MongoDB for seamless data management, built a responsive React dashboard to display real-time metrics, and utilized an external API for accurate SSL certificate data."
+              description="My groupmates and I built a React-based web app that lets users organize their wardrobe in a virtual closet, try on clothes using AR, and receive weather-based outfit suggestions for the next day. The app combines fashion with technology to enhance users' outfit planning and shopping experiences.."
               ghLink="https://github.com/emery97/HackAndRoll.git"
               technologies={[<FaBootstrap />, <DiReact />]}
               isCanva={false}
             />
-            
-            {/* Custom Canva Button */}
-            <Button
-              variant="success"
-              href="https://www.canva.com"
-              target="_blank"
-              style={{
-                marginTop: "10px",
-                backgroundColor: "#ff5b99", // Custom color for the button
-                borderColor: "#ff5b99", // Match the background
-                padding: "10px 20px", // Add padding for a bigger button
-                fontSize: "16px", // Custom font size
-              }}
-            >
-            </Button>
           </Col>
 
         <Col md={4} className="project-card">
