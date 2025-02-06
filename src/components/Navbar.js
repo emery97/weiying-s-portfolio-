@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
+import { AiOutlineDownload } from "react-icons/ai";
+import pdf from "../Assets/lee-wei-ying-resume.pdf";
 
 import {
   AiFillStar,
@@ -85,16 +87,14 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+            
+             <Nav.Item>
+              <Nav.Link>
+                <AiOutlineDownload />
+                &nbsp;Resume
               </Nav.Link>
             </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/emery97"
