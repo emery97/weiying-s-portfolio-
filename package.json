@@ -2,7 +2,7 @@
   "name": "react-portfolio-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emery97.github.io/weiying-s-portfolio-/",
+  "homepage": "https://github.com/emery97/weiying-s-portfolio-.git",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
