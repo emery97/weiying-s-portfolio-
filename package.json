@@ -1,0 +1,66 @@
+{
+  "name": "react-portfolio-template",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://emery97.github.io/weiying-s-portfolio-/",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.19",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.98",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "bootstrap": "^5.3.3",
+    "pdfjs-dist": "^2.10.377",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "react-parallax-tilt": "^1.7.279",
+    "react-pdf": "^9.2.1",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sass": "^1.77.4",
+    "typescript": "^4.9.5",
+    "typewriter-effect": "^2.21.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.3.0"
+  }
+}
