@@ -88,10 +88,9 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             
-             <Nav.Item>
-              <Nav.Link>
-                <AiOutlineDownload />
-                &nbsp;Resume
+            <Nav.Item>
+              <Nav.Link href={pdf} target="_blank" onClick={() => updateExpanded(false)}>
+                <AiOutlineDownload /> Resume
               </Nav.Link>
             </Nav.Item>
 
