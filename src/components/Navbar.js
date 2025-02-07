@@ -33,6 +33,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const handleResumeClick = () => {
+    // Open the resume in the browser's default PDF viewer
+    window.open(pdf, "_blank");
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -42,9 +47,9 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand className="portfolio-text">
-        <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} style={{ color: "white" }}>
-          Wei Ying's Portfolio
-        </Nav.Link>
+          <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} style={{ color: "white" }}>
+            Wei Ying's Portfolio
+          </Nav.Link>
         </Navbar.Brand>
 
         <Navbar.Toggle
@@ -87,9 +92,9 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            
-             <Nav.Item>
-              <Nav.Link>
+
+            <Nav.Item>
+              <Nav.Link onClick={handleResumeClick}>
                 <AiOutlineDownload />
                 &nbsp;Resume
               </Nav.Link>
