@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weiying-s-portfolio-/static/css/main.789a41b4.css",
-    "main.js": "/weiying-s-portfolio-/static/js/main.8fcc8675.js",
+    "main.js": "/weiying-s-portfolio-/static/js/main.96119eaa.js",
     "static/js/787.a0090b9d.chunk.js": "/weiying-s-portfolio-/static/js/787.a0090b9d.chunk.js",
     "static/media/ameliaXweiying.png": "/weiying-s-portfolio-/static/media/ameliaXweiying.387190b9693151d5794a.png",
     "static/media/SPM.png": "/weiying-s-portfolio-/static/media/SPM.cb6bf27f7ed3a0f70e33.png",
@@ -17,11 +17,11 @@
     "static/media/pre.svg": "/weiying-s-portfolio-/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/weiying-s-portfolio-/index.html",
     "main.789a41b4.css.map": "/weiying-s-portfolio-/static/css/main.789a41b4.css.map",
-    "main.8fcc8675.js.map": "/weiying-s-portfolio-/static/js/main.8fcc8675.js.map",
+    "main.96119eaa.js.map": "/weiying-s-portfolio-/static/js/main.96119eaa.js.map",
     "787.a0090b9d.chunk.js.map": "/weiying-s-portfolio-/static/js/787.a0090b9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.789a41b4.css",
-    "static/js/main.8fcc8675.js"
+    "static/js/main.96119eaa.js"
   ]
 }
